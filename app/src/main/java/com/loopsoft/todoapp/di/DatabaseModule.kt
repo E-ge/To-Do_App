@@ -23,6 +23,6 @@ object DatabaseModule {
 
     @Singleton
     @Provides
-    fun provideAppDatabase(database: AppDatabase) = database.todoDao()
+    fun provideTodoDao(database: AppDatabase) = database.todoDao()
 
 }
